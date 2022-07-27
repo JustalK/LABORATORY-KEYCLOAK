@@ -1,0 +1,20 @@
+{
+  "name": "laboratory-keycloak",
+  "version": "1.0.0",
+  "description": "This project is a simple example how to setup a keycloak with docker-compose.",
+  "main": "index.js",
+  "scripts": {
+    "start": "docker-compose --env-file ./env/.env.development up -d --build",
+    "stop": "docker-compose --env-file ./env/.env.development down"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://justalk: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@github.com/justalk/LABORATORY-KEYCLOACK.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justalk/LABORATORY-KEYCLOACK/issues"
+  },
+  "homepage": "https://github.com/justalk/LABORATORY-KEYCLOACK#readme"
+}

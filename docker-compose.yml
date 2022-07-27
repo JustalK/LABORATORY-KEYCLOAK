@@ -3,30 +3,30 @@ version: '3.9'
 services:
   postgres:
     image: postgres:13.2
-    restart: unless-stopped
+    container_name: labo-postgres
     environment:
-      POSTGRES_DB: keycloack
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: test
+      POSTGRES_DB: ${POSTGRES_DATABASE_NAME}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    restart: unless-stopped
     networks:
       - local-keycloak
-
   keycloak:
-    depends_on:
-      - postgres
-    container_name: local_keycloak
+    container_name: labo-keycloak
     environment:
       DB_VENDOR: postgres
       DB_ADDR: postgres
-      DB_DATABASE: keycloack
-      DB_USER: admin
-      DB_PASSWORD: test
-      KEYCLOAK_USER: admin
-      KEYCLOAK_PASSWORD: test
+      DB_DATABASE: ${POSTGRES_DATABASE_NAME}
+      DB_USER: ${POSTGRES_USER}
+      DB_PASSWORD: ${POSTGRES_PASSWORD}
+      KEYCLOAK_USER: ${KEYCLOAK_USER}
+      KEYCLOAK_PASSWORD: ${KEYCLOAK_PASSWORD}
     image: jboss/keycloak:latest
     ports:
       - "8080:8080"
     restart: unless-stopped
+    depends_on:
+      - postgres
     networks:
       - local-keycloak
 
