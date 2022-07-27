@@ -2,6 +2,8 @@
 
 This project show how to setup a keycloack using docker-compose and how to use it with a tutorial with images at every steps. The image of the container come from the docker cloud. I use the images **jboss/keycloak** for the keycloack and **postgres** for the database.
 
+## What is keycloak and why to use it ?
+
 *Keycloak is an open-source identity and access management tool for adding authentication to modern applications and services. You can easily set up your application’s login/logout, protected routes and identity management without much work on your part. Once logged-in to Keycloak, users don't have to login again to access a different application.*
 
 ## How to use
