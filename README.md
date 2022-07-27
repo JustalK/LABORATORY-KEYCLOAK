@@ -1,6 +1,6 @@
-# LABORATORY-KEYCLOACK
+# LABORATORY-KEYCLOAK
 
-This project show how to setup a keycloack using docker-compose and how to use it with a tutorial with images at every steps. The image of the container come from the docker cloud. I use the images **jboss/keycloak** for the keycloack and **postgres** for the database.
+This project show how to setup a keycloak using docker-compose and how to use it with a tutorial with images at every steps. The image of the container come from the docker cloud. I use the images **jboss/keycloak** for the keycloak and **postgres** for the database.
 
 ## What is keycloak and why to use it ?
 
@@ -10,7 +10,7 @@ This project show how to setup a keycloack using docker-compose and how to use i
 
 #### Access the admin console
 
-First we need to start the server keycloack and the database that will keep our users:
+First we need to start the server keycloak and the database that will keep our users:
 
 ```bash
 $ npm run start
