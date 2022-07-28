@@ -104,6 +104,24 @@ You should be redirect to a login page. Enter the credential of the user we just
 
 From this panel, I can modify my information, see the application I am log on and with what device.
 
+#### Accessing and allowing the register
+
+For allowing the register, we need to first activate it.
+For doing so, click on the **Realm Setting** menu on the left and take the second tabs **login**.
+
+Activate the first option `User Registration`.
+
+![Alt text](Documentation/16.png?raw=true "Documentation")
+
+You should now see at the bottom of the login, a new option `register`.
+
+![Alt text](Documentation/17.png?raw=true "Documentation")
+
+Now, any person can register on your keycloak by following the following form.
+The user can be seen in the admin panel.
+
+![Alt text](Documentation/18.png?raw=true "Documentation")
+
 ## Links
 
 * [https://www.baeldung.com/spring-boot-keycloak](https://www.baeldung.com/spring-boot-keycloak)
